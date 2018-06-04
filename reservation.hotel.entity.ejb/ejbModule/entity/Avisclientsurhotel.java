@@ -22,12 +22,12 @@ public class Avisclientsurhotel implements Serializable {
 
 	//bi-directional many-to-one association to Hotel
 	@ManyToOne
-	@JoinColumn(name="code_hotel", referencedColumnName = "code_hotel", insertable = false, updatable = false)
+	@JoinColumn(name="code_hotel", insertable=false, updatable=false)
 	private Hotel hotel;
 
 	//bi-directional many-to-one association to Client
 	@ManyToOne
-	@JoinColumn(name="id_client", referencedColumnName = "id_client", insertable = false, updatable = false)
+	@JoinColumn(name="id_client", insertable=false, updatable=false)
 	private Client client;
 
 	public Avisclientsurhotel() {

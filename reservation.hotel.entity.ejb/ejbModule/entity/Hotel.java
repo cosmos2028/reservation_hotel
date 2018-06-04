@@ -28,8 +28,6 @@ public class Hotel implements Serializable {
 	@Column(name="nom_hotel")
 	private String nomHotel;
 
-	private String profil;
-
 	private String telephone;
 
 	private String ville;
@@ -87,14 +85,6 @@ public class Hotel implements Serializable {
 
 	public void setNomHotel(String nomHotel) {
 		this.nomHotel = nomHotel;
-	}
-
-	public String getProfil() {
-		return this.profil;
-	}
-
-	public void setProfil(String profil) {
-		this.profil = profil;
 	}
 
 	public String getTelephone() {

@@ -23,12 +23,12 @@ public class Promotionchambre implements Serializable {
 
 	//bi-directional many-to-one association to Client
 	@ManyToOne
-	@JoinColumn(name="id_client", referencedColumnName = "id_client", insertable = false, updatable = false)
+	@JoinColumn(name="id_client", insertable=false, updatable=false)
 	private Client client;
 
 	//bi-directional many-to-one association to Chambrepublier
 	@ManyToOne
-	@JoinColumn(name="id_publication", referencedColumnName = "id_publication", insertable = false, updatable = false)
+	@JoinColumn(name="id_publication", insertable=false, updatable=false)
 	private Chambrepublier chambrepublier;
 
 	public Promotionchambre() {

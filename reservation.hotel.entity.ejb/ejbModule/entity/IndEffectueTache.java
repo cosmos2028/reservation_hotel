@@ -30,12 +30,12 @@ public class IndEffectueTache implements Serializable {
 
 	//bi-directional many-to-one association to Independant
 	@ManyToOne
-	@JoinColumn(name="id_independant", referencedColumnName = "id_independant", insertable = false, updatable = false)
+	@JoinColumn(name="id_independant", insertable=false, updatable=false)
 	private Independant independant;
 
 	//bi-directional many-to-one association to Tache
 	@ManyToOne
-	@JoinColumn(name="id_tache", referencedColumnName = "id_tache", insertable = false, updatable = false)
+	@JoinColumn(name="id_tache", insertable=false, updatable=false)
 	private Tache tache;
 
 	public IndEffectueTache() {

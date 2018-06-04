@@ -16,6 +16,7 @@
 		<class>entity.IndEffectueTachePK</class>
 		<class>entity.Independant</class>
 		<class>entity.Langue</class>
+		<class>entity.Profil</class>
 		<class>entity.Promotionchambre</class>
 		<class>entity.PromotionchambrePK</class>
 		<class>entity.Reservation</class>

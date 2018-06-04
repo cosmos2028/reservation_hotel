@@ -25,11 +25,11 @@ public class Client implements Serializable {
 
 	private String courriel;
 
+	private String motDePass;
+
 	private String nom;
 
 	private String prenom;
-
-	private String profil;
 
 	private String telephone;
 
@@ -87,6 +87,14 @@ public class Client implements Serializable {
 		this.courriel = courriel;
 	}
 
+	public String getMotDePass() {
+		return this.motDePass;
+	}
+
+	public void setMotDePass(String motDePass) {
+		this.motDePass = motDePass;
+	}
+
 	public String getNom() {
 		return this.nom;
 	}
@@ -101,14 +109,6 @@ public class Client implements Serializable {
 
 	public void setPrenom(String prenom) {
 		this.prenom = prenom;
-	}
-
-	public String getProfil() {
-		return this.profil;
-	}
-
-	public void setProfil(String profil) {
-		this.profil = profil;
 	}
 
 	public String getTelephone() {
